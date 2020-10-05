@@ -5,13 +5,15 @@ const ImageCard = ({ image }) => {
   const tags = image.tags.split(', ');
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <img src={image.webformatURL} alt={image.pageURL} className="w-full" />
+    <div className="m-5 bg-gray-200 max-w-sm max-h-full rounded overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105">
+      <a href={image.largeImageURL} target="_blank" rel="noopener noreferrer">
+        <img src={image.webformatURL} alt={image.pageURL} className="w-full" />
+      </a>
       <div className="px-6 py-4">
-        <div className="font-bold text-purple-500 text-xl mb-2">
+        <div className="font-bold text-blue-500 text-xl mb-2">
           Photo by {image.user}
         </div>
-        <ul>
+        <ul className="text-gray-800">
           <li>
             <strong>Views: </strong>
             {image.views}
