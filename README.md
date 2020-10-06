@@ -8,7 +8,7 @@
    `git clone git@github.com:hendraaagil/pizza-joint.git`
 2. Install all dependencies <br />
    `npm install`
-3. Copy `env.example` to `.env` and change with your own Pixabay API Key
+3. Copy `.env.example` to `.env` and change with your own [Pixabay API](https://pixabay.com/api/docs/) Key
 4. Run app <br />
    `npm start`
 
