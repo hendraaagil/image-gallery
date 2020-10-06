@@ -5,7 +5,7 @@ const ImageCard = ({ image }) => {
   const tags = image.tags.split(', ');
 
   return (
-    <div className="m-5 bg-gray-200 max-w-sm max-h-full rounded overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105">
+    <div className="m-5 bg-gray-100 max-w-sm max-h-full rounded overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105">
       <a href={image.largeImageURL} target="_blank" rel="noopener noreferrer">
         <img src={image.webformatURL} alt={image.pageURL} className="w-full" />
       </a>
@@ -32,7 +32,7 @@ const ImageCard = ({ image }) => {
         {tags.map((tag) => (
           <span
             key={uuidv4()}
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+            className="mr-2 my-1 px-3 py-1 inline-block bg-gray-100 rounded-full text-sm font-semibold text-gray-700 shadow-inner"
           >
             #{tag}
           </span>
